@@ -7,9 +7,11 @@
   list-style: none;
 }
 body {
+  padding-top: 100px;
   font-family: "Poppins", sans-serif;
   background-color: #f5f9fc;
 }
+
 /* Estilos para la sección de encabezado */
 .header {
   display: flex;
@@ -80,7 +82,7 @@ body {
   margin-bottom: 25px;
 }
 .header-txt p {
-  font-size: 16x;
+  font-size: 16px;
   color: #656875;
   margin-bottom: 35px;
 }
@@ -178,11 +180,18 @@ h2 {
 .event-1 p {
   margin-bottom: 40px;
 }
-.events-general{
+.events-general {
   text-align: center;
 }
-.events-general h2{
+.events-general h2 {
   margin-top: 25px;
+}
+.upcoming-events h2 {
+  margin-bottom: 10px;
+}
+.upcoming-events p {
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 .cards-grid {
   text-align: center;
@@ -308,6 +317,295 @@ h2 {
 }
 .member-card:hover p {
   color: #656875;
+}
+/* Estilos para la seccion de resultados y productos */
+.results {
+  padding: 60px 0; 
+}
+
+.results-1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.results-1 h2 {
+  font-size: 36px;
+  line-height: 42px;
+  color: #121140;
+  margin-bottom: 15px;
+}
+
+.results-1 p {
+  font-size: 16px;
+  color: #656875;
+  margin-bottom: 20px;
+}
+
+.results-card {
+  display: flex;
+  justify-content: center;
+}
+
+.results-general {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.result-card {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  text-align: left;
+  position: relative;
+}
+
+.result-card h3 {
+  font-size: 20px;
+  color: #121140;
+  margin-bottom: 15px;
+}
+
+.result-card h4 {
+  font-size: 16px;
+  color: #121140;
+  margin-bottom: 10px;
+}
+
+.result-card p {
+  font-size: 15px;
+  color: #656875;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+
+.result-card .tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #0077b6;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+
+.result-card:hover {
+  transform: scale(1.05);
+  background-color: #e0f7fa;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  z-index: 10;
+}
+
+.result-card:hover h3,
+.result-card:hover h4 {
+  color: #03045e;
+}
+.result-card .btn-4 {
+  margin-top: 10px;
+} 
+/* Estilos para la sección de productos  */
+.products {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.products-1 {
+  margin-bottom: 40px;
+}
+
+.products-1 h2 {
+  font-size: 36px;
+  color: #121140;
+  margin-bottom: 15px;
+}
+
+.products-1 p {
+  font-size: 16px;
+  color: #656875;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+.products-general {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+
+.product-card {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.product-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background-color: #0077b6;
+}
+
+
+.product-card h3 {
+  font-size: 20px;
+  color: #121140;
+  margin-bottom: 15px;
+}
+
+
+.product-card p {
+  font-size: 15px;
+  color: #656875;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+
+.product-card .btn-4 {
+  margin-top: 10px;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  background-color: #e0f7fa;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  z-index: 10;
+}
+
+.product-card:hover h3 {
+  color: #03045e;
+}
+
+/* Estilos para la sección de galería   */
+.gallery {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.gallery-1 {
+  margin-bottom: 40px;
+}
+
+.gallery-1 h2 {
+  font-size: 36px;
+  color: #121140;
+  margin-bottom: 15px;
+}
+
+.gallery-1 p {
+  font-size: 16px;
+  color: #656875;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+
+.gallery-item::after {
+  content: "Ver imagen";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 119, 182, 0.6);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+/* Ajuste para que el modal de la galería sea pantalla completa y fondo oscuro */
+#gallery-modal {
+  background-color: rgba(0, 0, 0, 0.9) !important; /* Fondo mucho más oscuro */
+  padding-top: 50px;
+}
+
+/* Sobreescribimos el cuadro blanco del modal general solo para la galería */
+#gallery-modal .modal-content {
+  background-color: transparent !important; 
+  padding: 0 !important;
+  width: 90% !important;
+  max-width: 800px !important;
+  margin: auto;
+  border: none !important;
+}
+
+#gallery-img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain; /* Evita que la foto se deforme */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Estilo para la X de cerrar en la galería */
+#gallery-close {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  opacity: 0.8;
+}
+
+#gallery-close:hover {
+  opacity: 1;
 }
 .modal {
   display: none;
@@ -447,7 +745,89 @@ h2 {
   width: 30px;
   height: 30px;
 }
+.general,
+.events,
+.teams,
+.information {
+  padding: 60px 0; 
+}
+h2 {
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 15px; 
+}
+
+.general-2 p,
+.teams-1 p,
+.event-1 p,
+.information-1 p {
+  margin-bottom: 20px; }
+
+.section-divider {
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #0077b6, transparent);
+  margin: 60px auto;
+  border-radius: 5px;
+}
+
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #0077b6;
+  margin: 10px auto 0 auto;
+  border-radius: 5px;
+}
+
+
+.section-divider.light {
+  background: linear-gradient(to right, transparent, #90e0ef, transparent);
+}
+
+
+.card-grid,
+.general-card,
+.team-card,
+.result-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-grid::before,
+.general-card::before,
+.team-card::before,
+.result-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background-color: #0077b6;
+  border-radius: 5px 0 0 5px;
+  opacity: 0.8;
+}
 @media (max-width: 768px) {
+   .general,
+  .events,
+  .teams,
+  .information {
+    padding: 30px 15px; /* más compacto en móvil */
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 15px;
+    line-height: 1.4; /* más compacto */
+  }
   .menu {
     padding: 30px;
   }
@@ -508,8 +888,30 @@ h2 {
   .general-card {
     margin: 0 0 25px 0;
   }
-   .members {
+  .members {
     grid-template-columns: 1fr;
+  }
+  .products {
+    padding: 30px 15px;
+  }
+
+  .products-1 h2 {
+    font-size: 28px;
+  }
+
+  .products-1 p {
+    font-size: 14px;
+  }
+  .gallery {
+    padding: 30px 15px;
+  }
+
+  .gallery-1 h2 {
+    font-size: 28px;
+  }
+
+  .gallery-item img {
+    height: 200px;
   }
   .bg-1,
   .bg-2,
