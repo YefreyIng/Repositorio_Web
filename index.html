@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -11,23 +11,25 @@
 
 <body>
   <!-- Header  -->
-  <header class="header">
+  <header class="header" id="inicio">
     <div class="menu container">
-      <a href="#" class="logo">logo</a>
+    <a href="#inicio">
+  <img src="img/logo.png" class="logo" alt="Logo SIS">
+</a>
       <input type="checkbox" id="menu" />
       <label for="menu">
         <img src="img/menu.png" class="menu-icono" alt="" />
       </label>
       <nav class="navbar">
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre el semillero</a></li>
-          <li><a href="#">Eventos</a></li>
-          <li><a href="#">Equipos</a></li>
-          <li><a href="#">Resultados</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Galería</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-semillero">Sobre el semillero</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#equipos">Equipos</a></li>
+          <li><a href="#resultados">Resultados</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </div>
@@ -45,7 +47,7 @@
           desarrollo de software, contribuyendo al crecimiento académico y
           profesional de sus integrantes.
         </p>
-        <a href="#" class="btn-1"> Informacion</a>
+        <a href="#sobre-semillero" class="btn-1"> Informacion</a>
       </div>
       <div class="header-img">
         <img src="img/sis-removebg-preview.png" alt="" />
@@ -53,7 +55,7 @@
     </div>
   </header>
   <!-- Informacion general -->
-  <section class="general container">
+  <section class="general container" id="sobre-semillero">
     <div class="general-1">
       <div class="general-card" data-aos="fade-right" data-aos-duration="1000">
         <img src="img/mision.png" alt="" />
@@ -139,7 +141,7 @@
     </div>
   </section>
   <!-- Eventos del semillero  -->
-  <section class="events container">
+  <section class="events container" id="eventos">
     <div class="event-1">
       <h2 data-aos="fade-up" data-aos-duration="1000">Eventos del Semillero</h2>
       <p data-aos="fade-up" data-aos-duration="1000">
@@ -200,7 +202,7 @@
 
   </section>
   <!-- seccion de equipos de trabajo   -->
-  <section class="teams container">
+  <section class="teams container" id="equipos">
     <div class="teams-1">
       <h2 data-aos="fade-up" data-aos-duration="1000">Equipos de trabajo</h2>
       <p data-aos="fade-up" data-aos-duration="1000">
@@ -281,7 +283,7 @@
     </div>
   </section>
   <!-- seccion de resultados y productos   -->
-  <section class="results container">
+  <section class="results container" id="resultados">
   <div class="results-1">
     <h2 data-aos="fade-up" data-aos-duration="1000">Resultados de Investigación</h2>
     <p data-aos="fade-up" data-aos-duration="1000">
@@ -416,7 +418,7 @@
   </div>
 </section>
  <!-- Seccion de productos academicos   -->
-<section class="products container">
+<section class="products container" id="productos">
   <div class="products-1">
     <h2 data-aos="fade-up" data-aos-duration="1000">Productos Académicos</h2>
     <p data-aos="fade-up" data-aos-duration="1000">
@@ -456,7 +458,7 @@
   </div>
 </section>
 <!-- seccion de galeria -->
-<section class="gallery container">
+<section class="gallery container" id="galeria">
   <div class="gallery-1">
     <h2 data-aos="fade-up">Galería</h2>
     <p data-aos="fade-up">
@@ -492,72 +494,109 @@
 
   </div>
 </section>
-  <!-- Sobre nosotros  -->
-  <section class="general container">
-    <div class="general-2">
-      <h2>Sobre nosotros</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
-        repellat fugit veritatis, commodi officia eos aspernatur corporis et
-        maiores esse aliquam nostrum illum consequatur non ratione! Sed,
-        laboriosam. Est, iusto!
-      </p>
-      <a href="#" class="btn-2">Informacion</a>
-    </div>
-    <div class="general-1">
-      <div class="general-card bg-1"></div>
-      <div class="general-card bg-2"></div>
-      <div class="general-card bg-3"></div>
-    </div>
-  </section>
-  <main class="information">
-    <h2>Para mas Informacion</h2>
+<!-- seccion de contacto -->
+<section class="contact container" id="contacto">
+  <div class="contact-1">
+    <h2 data-aos="fade-up">Contacto</h2>
+    <p data-aos="fade-up">
+      ¿Tienes preguntas o quieres hacer parte del semillero? Escríbenos.
+    </p>
+  </div>
 
-    <div class="informaction-content container">
-      <div class="information-1">
-        <h3>Reservacion y vuelos</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
-          tempore? Earum, dignissimos. Saepe nisi id beatae est quod
-          temporibus labore aspernatur illo, voluptates voluptatum accusantium
-          mollitia quam cupiditate fuga magni!
-        </p>
-        <a href="#" class="btn-2">Informacion</a>
+  <div class="contact-content">
+
+    <!-- FORMULARIO -->
+    <form class="contact-form" data-aos="fade-right">
+
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+
+      <textarea placeholder="Escribe tu mensaje..." rows="5" required></textarea>
+
+      <button type="submit" class="btn-1">Enviar mensaje</button>
+    </form>
+
+    <!-- INFO -->
+    <div class="contact-info" data-aos="fade-left">
+
+      <h3>Información</h3>
+
+    <p>
+  <img src="img/ubicacion2.png" class="icon-contact">
+  <strong>Ubicación:</strong> Universidad / Sede principal
+</p>
+
+<p>
+  <img src="img/correo.png" class="icon-contact">
+  <strong>Email:</strong> semillero@sis.edu
+</p>
+
+<p>
+  <img src="img/phone.png" class="icon-contact">
+  <strong>Teléfono:</strong> +57 300 000 0000
+</p>
+
+      <div class="contact-socials">
+        <a href="#"><img src="img/s1.png" alt=""></a>
+        <a href="#"><img src="img/s2.png" alt=""></a>
+        <a href="#"><img src="img/s3.png" alt=""></a>
       </div>
-      <div class="information-1">
-        <h3>Destinos y ofertas</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
-          tempore? Earum, dignissimos. Saepe nisi id beatae est quod
-          temporibus labore aspernatur illo, voluptates voluptatum accusantium
-          mollitia quam cupiditate fuga magni!
-        </p>
-        <a href="#" class="btn-2">Informacion</a>
-      </div>
+
     </div>
-  </main>
-  <footer class="footer container">
-    <div class="footer-txt">
-      <a href="#" class="logo">logo </a>
+
+  </div>
+</section>
+<footer class="footer">
+
+  <div class="footer-content container">
+
+    <!-- LOGO / DESCRIPCIÓN -->
+    <div class="footer-box">
+      <h3>Semillero SIS</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-        sed, sequi doloribus incidunt suscipit rerum laudantium debitis
-        asperiores doloremque vero cumque dignissimos esse modi fuga magnam
-        voluptates, nemo quis? Est?
+        Espacio académico enfocado en la investigación, innovación y desarrollo de soluciones tecnológicas.
       </p>
     </div>
-    <div class="footer-socials">
-      <a href="#">
-        <img src="img/s1.png" alt="" />
-      </a>
-      <a href="#">
-        <img src="img/s2.png" alt="" />
-      </a>
-      <a href="#">
-        <img src="img/s3.png" alt="" />
-      </a>
+
+    <!-- ENLACES -->
+    <div class="footer-box">
+      <h3>Enlaces</h3>
+       <a href="#inicio">Inicio</a>
+          <a href="#sobre-semillero">Sobre el semillero</a>
+          <a href="#eventos">Eventos</a>
+          <a href="#equipos">Equipos</a>
+          <a href="#resultados">Resultados</a>
+          <a href="#productos">Productos</a>
+          <a href="#galeria">Galería</a>
+          <a href="#contacto">Contacto</a>
     </div>
-  </footer>
+
+    <!-- CONTACTO -->
+    <div class="footer-box">
+      <h3>Contacto</h3>
+      <p>Colombia</p>
+      <p>semillero@sis.edu</p>
+      <p>+57 300 000 0000</p>
+    </div>
+
+    <!-- REDES -->
+    <div class="footer-box">
+      <h3>Síguenos</h3>
+      <div class="footer-socials">
+        <a href="#"><img src="img/facebook.png" alt=""></a>
+        <a href="#"><img src="img/instagram.png" alt=""></a>
+        <a href="#"><img src="img/github.png" alt=""></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- COPY -->
+  <div class="footer-bottom">
+    <p>© 2026 Semillero SIS | Todos los derechos reservados</p>
+  </div>
+
+</footer>
 <div id="gallery-modal" class="modal">
   <span class="close" id="gallery-close">&times;</span>
   <img class="modal-content" id="gallery-img">

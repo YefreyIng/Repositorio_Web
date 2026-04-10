@@ -6,33 +6,25 @@ function openModal(id) {
 function closeModal(id) {
   document.getElementById(id).style.display = "none";
 }
-
-// --- Lógica nueva para la Galería ---
 const galleryModal = document.getElementById("gallery-modal");
 const galleryImg = document.getElementById("gallery-img");
 const galleryClose = document.getElementById("gallery-close");
 
-// Seleccionamos todos los items de la galería
 const galleryItems = document.querySelectorAll(".gallery-item");
 
 galleryItems.forEach(item => {
   item.addEventListener("click", () => {
     const imgInside = item.querySelector("img");
-    galleryModal.style.display = "block";
-    galleryImg.src = imgInside.src; // Pasa la ruta de la imagen
+    galleryModal.style.display = "flex";
+    galleryImg.src = imgInside.src;
   });
 });
 
-// Cerrar el modal de galería al hacer clic en la X
-if(galleryClose) {
-    galleryClose.onclick = function() {
-        galleryModal.style.display = "none";
-    }
+galleryClose.onclick = function() {
+  galleryModal.style.display = "none";
 }
-
-// Cerrar cualquier modal al hacer clic fuera del contenido
-window.onclick = function(event) {
-  if (event.target.classList.contains('modal')) {
-    event.target.style.display = "none";
-  }
-}
+document.querySelector(".contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Mensaje enviado correctamente. ¡Gracias por contactarnos!");
+  this.reset();
+});
